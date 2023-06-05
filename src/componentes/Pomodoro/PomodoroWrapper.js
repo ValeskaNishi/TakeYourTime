@@ -9,7 +9,6 @@ import timesUpSfx from './../sounds/src_sounds_timesUp.mp3'
 import './PomodoroWrapper.css'
 
 
-
 function PomodoroWrapper() {
   const [ settingsVisible, setSettingsVisible ] = useState(false)
   const [ timerMode, setTimerMode ] = useState('pomo')   // options: pomo, short, long
@@ -74,6 +73,7 @@ function PomodoroWrapper() {
   return (
     <div className="pomodoro-app">
       <Header title="Pomodoro Timer" />
+      <p>Hora de se concentrar!</p>
       <Controls
         timerMode={timerMode}
         setTimerMode={setTimerMode}
