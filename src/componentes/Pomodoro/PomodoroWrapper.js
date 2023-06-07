@@ -7,7 +7,8 @@ import { useState, useEffect } from 'react';
 import useSound from 'use-sound'
 import timesUpSfx from './../sounds/src_sounds_timesUp.mp3'
 import './PomodoroWrapper.css'
-
+import LittleTime from "../../img/pomodoroEstudar.png"
+import Menu from '../../menu.js'
 
 function PomodoroWrapper() {
   const [ settingsVisible, setSettingsVisible ] = useState(false)
@@ -72,8 +73,10 @@ function PomodoroWrapper() {
 
   return (
     <div className="pomodoro-app">
+      <Menu />
       <Header title="Pomodoro Timer" />
-      <p>Hora de se concentrar!</p>
+      <p className='horaConcentrar'>Hora de se concentrar!</p>
+      <img className='imgPomo' src={LittleTime} alt="imagem pomodoro"/>
       <Controls
         timerMode={timerMode}
         setTimerMode={setTimerMode}

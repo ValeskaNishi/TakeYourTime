@@ -50,8 +50,8 @@ const TimerDisplay = ({ timerMode,
   }
 
   let timesUpMsg = timerMode === 'pomo'
-                  ? 'time for a break'
-                  : 'back to work!'
+                  ? 'Descanse...'
+                  : 'Hora de voltar!'
 
   let timeText = timeLeft === '0:00'
                   ? timesUpMsg
