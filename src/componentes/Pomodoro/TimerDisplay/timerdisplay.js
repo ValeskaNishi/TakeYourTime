@@ -69,9 +69,7 @@ const TimerDisplay = ({ timerMode,
           text={timeText}
           strokeWidth={4}
           styles={buildStyles({
-            // How long animation takes to go from one percentage to another, in seconds
             pathTransitionDuration: 0.5,
-            // Colors & Fonts
             pathColor: 'var(--accent-color)',
             textColor: 'var(--text)',
             textSize: textSize,

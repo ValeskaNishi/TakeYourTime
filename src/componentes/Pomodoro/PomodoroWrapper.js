@@ -12,12 +12,12 @@ import Menu from '../../menu.js'
 
 function PomodoroWrapper() {
   const [ settingsVisible, setSettingsVisible ] = useState(false)
-  const [ timerMode, setTimerMode ] = useState('pomo')   // options: pomo, short, long
+  const [ timerMode, setTimerMode ] = useState('pomo')   
   const [ pomoLength, setPomoLength ] = useState(25)
   const [ shortLength, setShortLength ] = useState(3)
   const [ longLength, setLongLength ] = useState(15)
-  const [ fontPref, setFontPref ] = useState('Poppins')         // options: kumbh, roboto, space
-  const [ accentColor, setAccentColor ] = useState('default') // options: default, blue, purple
+  const [ fontPref, setFontPref ] = useState('Poppins')         
+  const [ accentColor, setAccentColor ] = useState('default') 
   const [ secondsLeft, setSecondsLeft] = useState(pomoLength * 60)
   const [ isActive, setIsActive ] = useState(false)
   const [ buttonText, setButtonText ] = useState('START')
